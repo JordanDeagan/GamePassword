@@ -1,0 +1,7 @@
+Build Game interface
+Build page interface
+
+connect interfaces to netflix
+
+Build Chess object (off interface)
+Build Chess Page (off interface)

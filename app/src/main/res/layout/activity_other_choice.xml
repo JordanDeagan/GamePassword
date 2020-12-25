@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtherChoice">
+
+    <ImageView
+        android:id="@+id/Axe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/axe_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Candle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Candle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/candle_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Gun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Axe"
+        app:layout_constraintTop_toTopOf="@+id/Axe" />
+
+    <ImageView
+        android:id="@+id/Gun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/gun_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Knife"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Candle"
+        app:layout_constraintTop_toTopOf="@+id/Axe" />
+
+    <ImageView
+        android:id="@+id/Knife"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/knife_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Gun"
+        app:layout_constraintTop_toTopOf="@+id/Axe" />
+
+    <ImageView
+        android:id="@+id/Pipe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/pipe_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Poison"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Axe" />
+
+    <ImageView
+        android:id="@+id/Poison"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/poison_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Rope"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Pipe"
+        app:layout_constraintTop_toTopOf="@+id/Pipe" />
+
+    <ImageView
+        android:id="@+id/Rope"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rope_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Wrench"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Poison"
+        app:layout_constraintTop_toTopOf="@+id/Pipe" />
+
+    <ImageView
+        android:id="@+id/Wrench"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wrench_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Rope"
+        app:layout_constraintTop_toTopOf="@+id/Pipe" />
+
+    <ImageView
+        android:id="@+id/Grey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/gray_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Green"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pipe" />
+
+    <ImageView
+        android:id="@+id/Green"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/green_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Mustard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Grey"
+        app:layout_constraintTop_toTopOf="@+id/Grey" />
+
+    <ImageView
+        android:id="@+id/Mustard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mustard_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Plum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Green"
+        app:layout_constraintTop_toTopOf="@+id/Grey" />
+
+    <ImageView
+        android:id="@+id/Plum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/plum_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Mustard"
+        app:layout_constraintTop_toTopOf="@+id/Grey" />
+
+    <ImageView
+        android:id="@+id/Peacock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/peacock_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Rose"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Grey" />
+
+    <ImageView
+        android:id="@+id/Rose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rose_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/Scarlet"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Peacock"
+        app:layout_constraintTop_toTopOf="@+id/Peacock" />
+
+    <ImageView
+        android:id="@+id/Scarlet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/scarlet_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/White"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Rose"
+        app:layout_constraintTop_toTopOf="@+id/Peacock" />
+
+    <ImageView
+        android:id="@+id/White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/white_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Scarlet"
+        app:layout_constraintTop_toTopOf="@+id/Peacock" />
+
+    <Button
+        android:id="@+id/ChoiceBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ChoiceSubmit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ChoiceSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/ChoiceBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ChoiceBack" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+hashmap of hashed results from games, individual objects for each game that hashes itself
+
+Splash screen (username text field, create account button, log in button)
+
+game menu(game selection views, submit button, info icon)
+-rules popup on first viewing & clicking info icon
+-netflix selection of games
+-is interface that stores list/hashmap and passes to dbhelper
+-stores one of 3 values
+    -log in sends stored info to dbhelper as log in request
+    -set up stores result and calls new version of game menu with confirm value and result
+    -confirm compares new result with passed result, then sends create user request
+-after each game, goes back to this screen, allowing to choose another game or submit
+
+game selection view(image view of game, text view of game name)
+-stores necessary info on game
+-links to specific game page
+
+dbhelper
+-add user(sign up)
+-find user(is username already used)
+-hash password(1+ for different version of storage)
+-potentially getSalt method(give username)
+-whatever necassary to hash
+
+game screen(game board, pieces, submit button, reset button, info icon)
+-rules popup before first use & info icon
+-reset clears board and storage
+-submit either passes hashmap to list, or hashes and passes it to hashmap
